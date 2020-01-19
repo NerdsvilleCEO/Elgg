@@ -379,6 +379,32 @@ $CONFIG->allow_phpinfo = false;
  */
 //$CONFIG->image_processor = 'imagick';
 
+
+/**
+ * Configure emailer transport
+ * 
+ * This setting can be used to select a different emailer transport. By default the Zend SmtpTransport is used.
+ * Currently only 'smtp' and 'sendmail' is supported as a different configuration.
+ * For 'smtp', the SMTP server's settings must be set, while 'sendmail' requires no configuration.
+ * 
+ * @global string $CONFIG->emailer_transport
+ */
+//$CONFIG->emailer_transport = 'smtp';
+
+/**
+ * Configure emailer SMTP settings
+ * 
+ * This setting is only necessary if the above emailer transport is set to 'smtp'.
+ * Please refer to https://docs.zendframework.com/zend-mail/transport/smtp-authentication/#examples
+ */
+//$CONFIG->emailer_smtp_settings = array(
+//    'username' => '',
+//    'password' => '',
+//    'ssl'      => '', // OPTIONAL (tls or ssl)
+//    'port'     => '', // OPTIONAL (Non-SSL default 25, SSL default 465, TLS default 587)
+//    'use_complete_quit' => '', // OPTIONAL
+//)
+
 /**
  * Logging level
  *
