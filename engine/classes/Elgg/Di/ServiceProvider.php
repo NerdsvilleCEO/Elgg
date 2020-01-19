@@ -472,18 +472,18 @@ class ServiceProvider extends DiContainer {
 		});
 
 		$this->setFactory('mailer', function(ServiceProvider $c) {
-            switch ($c->config->emailer_transport) {
-                case 'smtp':
-                    $transport = new \Zend\Mail\Transport\Smtp();
-                    $transportOptions = new \Zend\Mail\Transport\SmtpOptions(
-                        $c->config->emailer_smtp_settings
-                    );
-                    $transport->setOptions($transportOptions);
-                    return $transport;
-                default:
-                    return new \Zend\Mail\Transport\Sendmail();
-            }
-        });
+			switch ($c->config->emailer_transport) {
+				case 'smtp':
+					$transport = new \Zend\Mail\Transport\Smtp();
+					$transportOptions = new \Zend\Mail\Transport\SmtpOptions(
+						$c->config->emailer_smtp_settings
+					);
+					$transport->setOptions($transportOptions);
+					return $transport;
+				default:
+					return new \Zend\Mail\Transport\Sendmail();
+			}
+		});
 
 		$this->setFactory('menus', function(ServiceProvider $c) {
 			return new \Elgg\Menu\Service($c->hooks, $c->config);

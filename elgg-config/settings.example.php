@@ -397,18 +397,18 @@ $CONFIG->allow_phpinfo = false;
  * This setting is only necessary if the above emailer transport is set to 'smtp'.
  * Please refer to https://docs.zendframework.com/zend-mail/transport/smtp-authentication/#examples
  */
-// $CONFIG->emailer_smtp_settings = array(
-//     'name'              => 'localhost.localdomain',
-//     'host'              => '127.0.0.1',
-//     'connection_class'  => 'login',
-//     'connection_config' => [
-//         'username' => 'user',
-//         'password' => 'pass',
-//         'ssl'      => '', // OPTIONAL (tls or ssl)
-//         'port'     => '', // OPTIONAL (Non-SSL default 25, SSL default 465, TLS default 587)
-//         'use_complete_quit' => '', // OPTIONAL
-//     ],
-// );
+//$CONFIG->emailer_smtp_settings = array(
+//	'name'              => 'localhost.localdomain',
+//	'host'              => '127.0.0.1',
+//	'connection_class'  => 'login',
+//	'connection_config' => [
+//		'username' => 'user',
+//		'password' => 'pass',
+//		'ssl'      => '', // OPTIONAL (tls or ssl)
+//		'port'     => '', // OPTIONAL (Non-SSL default 25, SSL default 465, TLS default 587)
+//		'use_complete_quit' => '', // OPTIONAL
+//	],
+//);
 
 /**
  * Logging level
