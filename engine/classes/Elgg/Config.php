@@ -51,6 +51,8 @@ use Elgg\Project\Paths;
  * @property string        $elgg_settings_file
  * @property bool          $elgg_config_set_secret
  * @property bool          $enable_profiling
+ * @property string        $emailer_transport
+ * @property array         $emailer_smtp_settings
  * @property mixed         $embed_tab
  * @property string        $exception_include						This is an optional script used to override Elgg's default handling of uncaught exceptions.
  * @property string[]      $group
